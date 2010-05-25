@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="CustomAggregateFunctionSL.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+  <Grid x:Name="LayoutRoot">
+		<telerik:RadGridView x:Name="RadGridView1" ShowColumnFooters="True" AutoGenerateColumns="False" >
+			<telerik:RadGridView.Columns>
+				<telerik:GridViewDataColumn DataMemberBinding="{Binding Value1}" />
+				<telerik:GridViewDataColumn DataMemberBinding="{Binding Value2}" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Value3}" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Value4}" />
+            </telerik:RadGridView.Columns>
+		</telerik:RadGridView>
+	</Grid>
+</UserControl>
