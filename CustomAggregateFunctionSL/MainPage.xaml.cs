@@ -25,21 +25,21 @@ namespace CustomAggregateFunctionSL
             List<Item> items = new List<Item>();
             for (int i = 0; i < 10; i++)
             {
-                items.Add(new Item() { Value1 = i.ToString(), Value2 = i * 2, Value3 = DateTime.Now, Value4 = i * 1.5f });
+                items.Add(new Item() { stringValue = i.ToString(), intValue = i * 2, datetimeValue = DateTime.Now, floatValue = i * 1.5f });
             }
             this.RadGridView1.ItemsSource = items;
-            this.RadGridView1.Columns[0].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "Value1" });
-            this.RadGridView1.Columns[1].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "Value2" });
-            this.RadGridView1.Columns[2].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "Value3" });
-            this.RadGridView1.Columns[3].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "Value4" });
+            this.RadGridView1.Columns[0].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "stringValue" });
+            this.RadGridView1.Columns[1].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "intValue" });
+            this.RadGridView1.Columns[2].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "datetimeValue" });
+            this.RadGridView1.Columns[3].AggregateFunctions.Add(new MyAggregateSelectorFunction { SourceField = "floatValue" });
         }
     }
 
     public class Item
     {
-        public string Value1 { get; set; }
-        public int Value2 { get; set; }
-        public DateTime Value3 { get; set; }
-        public float Value4 { get; set; }
+        public string stringValue { get; set; }
+        public int intValue { get; set; }
+        public DateTime datetimeValue { get; set; }
+        public float floatValue { get; set; }
     }
 }

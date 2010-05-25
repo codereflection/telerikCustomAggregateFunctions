@@ -7,10 +7,10 @@
   <Grid x:Name="LayoutRoot">
 		<telerik:RadGridView x:Name="RadGridView1" ShowColumnFooters="True" AutoGenerateColumns="False" >
 			<telerik:RadGridView.Columns>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding Value1}" />
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding Value2}" />
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Value3}" />
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Value4}" />
+				<telerik:GridViewDataColumn DataMemberBinding="{Binding stringValue}" />
+				<telerik:GridViewDataColumn DataMemberBinding="{Binding intValue}" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding datetimeValue}" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding floatValue}" />
             </telerik:RadGridView.Columns>
 		</telerik:RadGridView>
 	</Grid>
