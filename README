@@ -1,0 +1,2 @@
+Example of how to inherit and use Teleri's EnumerableSelectorAggregateFunction class 
+in Silverlight to specific custom aggregates for data columns of different types.
